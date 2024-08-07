@@ -57,6 +57,7 @@ body {
 
 .footer {
     text-align: center;
+    // padding: 10px 0;
     background: #f8f9fa;
     border-top: 1px solid #ddd;
     width: 100%;
@@ -154,7 +155,7 @@ body {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #black;
+    background-color: #63e283;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -244,7 +245,7 @@ i {
 }
 
 div h2 {
-    border-bottom: 2px solid rgba(128, 128, 128, 0.438);
+    border-bottom: 2px solid #63e283;
     width: fit-content;
 }
 
