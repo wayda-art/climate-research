@@ -5,21 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Research</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="./images/8371913.ico" type="image/x-icon">
 </head>
 
 <body>
-
+    <div class="heda">
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+        <div class="controls">
+            <i class="fa-solid fa-sun" alt="Light Mode" id="light-mode-icon"></i>
+            <i class="fa-solid fa-moon" alt="Dark Mode" id="dark-mode-icon"
+                style="display: none; padding-left: 20px;"></i>
+        </div>
+    </div>
     <div class="container">
-        <div class="content-left">
+
+        <div class="content-left" id="menu">
             <h2>Contents</h2>
             <ul>
                 <li><a href="#section1">Abstract</a></li>
                 <li><a href="#section2">Introduction</a></li>
                 <li><a href="#section4">Results</a></li>
                 <li><a href="#section5">Discussion</a></li>
-                <!-- <li><a href="#section6">Methodology</a></li> -->
                 <li><a href="#section7">Materials & Methods</a></li>
                 <ul>
                     <li><a href="#section8">Participants</a></li>
@@ -33,13 +43,10 @@
                 </ul>
             </ul>
         </div>
-
         <div class="main-content">
             <div class="header">
-                <!-- <h1>Climate Research</h1> -->
                 <h3>YOUTH PERCEPTIONS AND KNOWLEDGE ON THE EFFECTIVENESS OF INDIVIDUAL ACTIONS IN MITIGATING CLIMATE
-                    CHANGE.
-                </h3>
+                    CHANGE.</h3>
             </div>
             <div id="section1">
                 <h2>Abstract</h2>
@@ -263,131 +270,122 @@
             </div>
             <div id="section4">
                 <h2>Results</h2>
-                <p>In this study, we explored youth’s knowledge and their perception on the effectiveness of individual
-                    actions in mitigating climate change. We asked these research questions on whether youths believe
-                    that their activities or lifestyle choices can help to lessen climate change, what is the accuracy
-                    of knowledge among youths regarding the effectiveness of various individual actions in mitigating
-                    climate change and what factors do influence youth’s perceptions and knowledge on effectiveness of
+                <p>In this study, we explored youth’s knowledge and their perception on the effectiveness of
+                    individual
+                    actions in mitigating climate change. We asked these research questions on whether youths
+                    believe
+                    that their activities or lifestyle choices can help to lessen climate change, what is the
+                    accuracy
+                    of knowledge among youths regarding the effectiveness of various individual actions in
+                    mitigating
+                    climate change and what factors do influence youth’s perceptions and knowledge on effectiveness
+                    of
                     individual actions in mitigating climate change? </p>
                 <br>
                 <p>
-                    300 youths from Dar es Salaam region were recruited in the study. Participants ages ranged from 13
+                    300 youths from Dar es Salaam region were recruited in the study. Participants ages ranged from
+                    13
                     to 24 years with 110 (36.7%) females and 190 (63.3%) males. Participant’s education levels were
-                    26.0% with no formal education, 37.3% with primary education, 22.0% with secondary education, and
+                    26.0% with no formal education, 37.3% with primary education, 22.0% with secondary education,
+                    and
                     14.7% with university education
                 </p>
                 <p>
                     Table 1
                 </p>
                 <table>
+                    
                     <thead>
                         <tr>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                            <th>Column 3</th>
+                            <th>Characteristics</th>
+                            <th>    </th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Number</th>
+                            <th>Proportion of sample (%)</th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th>Gender</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Repeat this <tr> element for each row -->
                         <tr>
-                            <td>Row 1, Cell 1</td>
-                            <td>Row 1, Cell 2</td>
-                            <td>Row 1, Cell 3</td>
+                            <td>Male</td>
+                            <td>110</td>
+                            <td>36.7</td>
                         </tr>
                         <tr>
-                            <td>Row 2, Cell 1</td>
-                            <td>Row 2, Cell 2</td>
-                            <td>Row 2, Cell 3</td>
+                            <td>Female</td>
+                            <td>190</td>
+                            <td>63.3</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>Age Group</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>13-17</td>
+                            <td>116</td>
+                            <td>38.7</td>
                         </tr>
                         <tr>
-                            <td>Row 3, Cell 1</td>
-                            <td>Row 3, Cell 2</td>
-                            <td>Row 3, Cell 3</td>
+                            <td>18-24</td>
+                            <td>184</td>
+                            <td>61.3</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>Educational Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>No formal education</td>
+                            <td>78</td>
+                            <td>26.0</td>
                         </tr>
                         <tr>
-                            <td>Row 4, Cell 1</td>
-                            <td>Row 4, Cell 2</td>
-                            <td>Row 4, Cell 3</td>
+                            <td>Primary Education</td>
+                            <td>112</td>
+                            <td>37.3</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Secondary Education</td>
+                            <td>66</td>
+                            <td>22.0</td>
                         </tr>
                         <tr>
-                            <td>Row 5, Cell 1</td>
-                            <td>Row 5, Cell 2</td>
-                            <td>Row 5, Cell 3</td>
+                            <td>University</td>
+                            <td>44</td>
+                            <td>14.7</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>Area of Residence</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rural</td>
+                            <td>115</td>
+                            <td>38.3</td>
                         </tr>
                         <tr>
-                            <td>Row 6, Cell 1</td>
-                            <td>Row 6, Cell 2</td>
-                            <td>Row 6, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 7, Cell 1</td>
-                            <td>Row 7, Cell 2</td>
-                            <td>Row 7, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 8, Cell 1</td>
-                            <td>Row 8, Cell 2</td>
-                            <td>Row 8, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 9, Cell 1</td>
-                            <td>Row 9, Cell 2</td>
-                            <td>Row 9, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 10, Cell 1</td>
-                            <td>Row 10, Cell 2</td>
-                            <td>Row 10, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 11, Cell 1</td>
-                            <td>Row 11, Cell 2</td>
-                            <td>Row 11, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 12, Cell 1</td>
-                            <td>Row 12, Cell 2</td>
-                            <td>Row 12, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 13, Cell 1</td>
-                            <td>Row 13, Cell 2</td>
-                            <td>Row 13, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 14, Cell 1</td>
-                            <td>Row 14, Cell 2</td>
-                            <td>Row 14, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 15, Cell 1</td>
-                            <td>Row 15, Cell 2</td>
-                            <td>Row 15, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 16, Cell 1</td>
-                            <td>Row 16, Cell 2</td>
-                            <td>Row 16, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 17, Cell 1</td>
-                            <td>Row 17, Cell 2</td>
-                            <td>Row 17, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 18, Cell 1</td>
-                            <td>Row 18, Cell 2</td>
-                            <td>Row 18, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 19, Cell 1</td>
-                            <td>Row 19, Cell 2</td>
-                            <td>Row 19, Cell 3</td>
-                        </tr>
-                        <tr>
-                            <td>Row 20, Cell 1</td>
-                            <td>Row 20, Cell 2</td>
-                            <td>Row 20, Cell 3</td>
+                            <td>Urban</td>
+                            <td>185</td>
+                            <td>61.3</td>
                         </tr>
                     </tbody>
                 </table>
@@ -403,13 +401,13 @@
                             <div class="label"> Social media</div>
                         </div>
                         <div class="bar" style="height: 17%;">
-                            <div class="label">Government agencies</div>
+                            <div class="label">Govt agencies</div>
                         </div>
                         <div class="bar" style="height: 47%;">
-                            <div class="label">Family and Friends</div>
+                            <div class="label">Family, Friends</div>
                         </div>
                         <div class="bar" style="height: 31%;">
-                            <div class="label">Local community</div>
+                            <div class="label">Local areas</div>
                         </div>
                         <div class="bar" style="height: 63%;">
                             <div class="label">The Internet</div>
@@ -598,10 +596,6 @@
                     actions related to climate change.
                 </p>
             </div>
-            <!-- <div id="section6">
-                    <h2>Methodology</h2>
-                    <p>Details of the methodology section...
-                </div> -->
             <div id="section7">
                 <h2>Materials & Methods</h2>
                 <p>The following section discusses the participants, data collection procedures, and instruments.
@@ -682,23 +676,28 @@
                     <li><i>Liao SM, Sandberg A, Roache R. Human Engineering and Climate Change. Ethics Policy &
                             Environment. 2012.
                         </i></li>
-                    <li><i>IPCC. Summary for Policymakers: Synthesis Report. Clim Chang 2023 Synth Report Contrib Work
+                    <li><i>IPCC. Summary for Policymakers: Synthesis Report. Clim Chang 2023 Synth Report Contrib
+                            Work
                             Groups I, II III to Sixth Assess Rep Intergov Panel Clim Chang. 2023;1–34.
                         </i></li>
-                    <li><i>Schwenkenbecher A. Is there an obligation to reduce one’s individual carbon footprint. Crit
+                    <li><i>Schwenkenbecher A. Is there an obligation to reduce one’s individual carbon footprint.
+                            Crit
                             Rev Int Soc Polit Philos. 2014;
                         </i></li>
                     <li><i>Ivanova D, Barrett J, Wiedenhofer D, Macura B, Callaghan M, Creutzig F. Quantifying the
                             potential for climate change mitigation of consumption options. Environmental Research
                             Letters. 2020.
                         </i></li>
-                    <li><i>Wynes S, Nicholas KA. The climate mitigation gap: Education and government recommendations
+                    <li><i>Wynes S, Nicholas KA. The climate mitigation gap: Education and government
+                            recommendations
                             miss the most effective individual actions. Environ Res Lett. 2017;
                         </i></li>
-                    <li><i>Salo M, Savolainen H, Karhinen S, Nissinen A. Drivers of household consumption expenditure
+                    <li><i>Salo M, Savolainen H, Karhinen S, Nissinen A. Drivers of household consumption
+                            expenditure
                             and carbon footprints in Finland. J Clean Prod. 2021;
                         </i></li>
-                    <li><i>Pickering GJ, Schoen K, Botta M. Lifestyle decisions and climate mitigation: current action
+                    <li><i>Pickering GJ, Schoen K, Botta M. Lifestyle decisions and climate mitigation: current
+                            action
                             and behavioural intent of youth. Mitig Adapt Strateg Glob Chang. 2021;
                         </i></li>
                     <li><i>Thew H, Middlemiss L, Paavola J. “Youth Is Not a Political Position”: Exploring Justice
@@ -711,67 +710,54 @@
                     <li>Pickering GJ, Schoen K, Botta M, Fazio X. Exploration of youth knowledge and perceptions of
                         individual-level climate mitigation action. Environ Res Lett. 2020;15(10).
                         </i></li>
-                    <li><i>Dawson V, Eilam E, Tolppanen S, Assaraf OBZ, Gokpinar T, Goldman D, et al. A cross-country
+                    <li><i>Dawson V, Eilam E, Tolppanen S, Assaraf OBZ, Gokpinar T, Goldman D, et al. A
+                            cross-country
                             comparison of climate change in middle school science and geography curricula. Int J Sci
-                            Educ [Internet]. 2022 Jun 13;44(9):1379–98. Available from:
-                            https://doi.org/10.1080/09500693.2022.2078011
+                            Educ [Internet]. 2022 Jun 13;44(9):1379–98. Available from: <a href="https://doi.org/10.1080/09500693.2022.2078011"> here</a>
+                            
                         </i></li>
                     <li><i>Shepardson DP, Niyogi D, Roychoudhury A, Hirsch A. Conceptualizing climate change in the
-                            context of a climate system: implications for climate and environmental education. Environ
+                            context of a climate system: implications for climate and environmental education.
+                            Environ
                             Educ Res [Internet]. 2012 Jun 1;18(3):323–52. Available from:
-                            https://doi.org/10.1080/13504622.2011.622839
+                            <a href="//doi.org/10.1080/13504622.2011.622839">here</a>
                         </i></li>
                     <li><i>Andersson Y, Timmons S, Lunn P. Youth Knowledge and Perceptions of Climate Mitigation.
                             2022;(1). Available from:
-                            https://www.esri.ie/publications/youth-knowledge-and-perceptions-of-climate-mitigation
+                            <a href="https://www.esri.ie/publications/youth-knowledge-and-perceptions-of-climate-mitigation">here</a>
                         </i></li>
                     <li><i>Baldwin C, Pickering G, Dale G. Knowledge and self-efficacy of youth to take action on
                             climate change. Environ Educ Res [Internet]. 2022;29(11):1597–616. Available from:
-                            https://doi.org/10.1080/13504622.2022.2121381
+                            <a href="https://doi.org/10.1080/13504622.2022.2121381">here</a>
                         </i></li>
                     <li><i>Truelove HB, Parks C. Perceptions of behaviors that cause and mitigate global warming and
                             intentions to perform these behaviors. J Environ Psychol [Internet]. 2012;32(3):246–59.
-                            Available from: https://www.sciencedirect.com/science/article/pii/S0272494412000254
+                            Available from: <a href="https://www.sciencedirect.com/science/article/pii/S0272494412000254">here</a>
                         </i></li>
                     <li><i>UNESCO. Education Transforms Lives. United Nations Educ. 2013;
                         </i></li>
-                    <li><i>Broom Douglas. Internet access still denied to many in the developing world | World Economic
+                    <li><i>Broom Douglas. Internet access still denied to many in the developing world | World
+                            Economic
                             Forum [Internet]. 2023 [cited 2024 Jul 14]. Available from:
-                            https://www.weforum.org/agenda/2023/09/broadband-no-luxury-basic-necessity/
+                           <a href="https://www.weforum.org/agenda/2023/09/broadband-no-luxury-basic-necessity/">here</a>
                         </i></li>
                     <li><i>Udas PB, Fournier B, Christianson TM, Desbiens S. What Can We Learn From Rural Youth in
                             British Columbia, Canada? Environment and Climate Change—Issues and Solutions.
                             Sustainability. 2021.
                         </i></li>
                     <li><i>Fritz L, Hansmann R, Dalimier B, Binder CR. Perceived impacts of the Fridays for Future
-                            climate movement on environmental concern and behaviour in Switzerland. Sustain Sci. 2023;
+                            climate movement on environmental concern and behaviour in Switzerland. Sustain Sci.
+                            2023;
                         </i></li>
                 </ol>
             </div>
         </div>
 
-        <div class="content-right">
-            <h2>Appearance</h2>
-            <p><strong>Text:</strong></p>
-            <label><input type="radio" name="text-size" value="small"> Small</label><br>
-            <label><input type="radio" name="text-size" value="standard" checked> Standard</label><br>
-            <label><input type="radio" name="text-size" value="large"> Large</label>
-            <p><strong>Width:</strong></p>
-            <label><input type="radio" name="width" value="standard" checked> Standard</label><br>
-            <label><input type="radio" name="width" value="wide"> Wide</label>
-            <p><strong>Color:</strong></p>
-            <label><input type="radio" name="color" value="automatic" checked> Automatic</label><br>
-            <label><input type="radio" name="color" value="light"> Light</label><br>
-            <label><input type="radio" name="color" value="dark"> Dark</label>
-            <!-- <p><button onclick="lockInSettings()">Lock In</button></p> -->
-        </div>
     </div>
-
     <div class="footer">
-        <p>© 2024 Your Website Name. All rights reserved.</p>
+        <p>© 2024 <a href="climatenyouth.netlify.app"><i style="color: inherit; font-size: inherit;"> climatenyouth.</i></a> All rights reserved.</p>
     </div>
-    <script src="./scripts/script.js"></script>
-
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
