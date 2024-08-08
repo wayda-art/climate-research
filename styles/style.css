@@ -64,6 +64,15 @@ body {
   bottom: 0;
   height: 60px;
 }
+.footer p{
+  padding:5px;
+}
+
+.footer i.matollo{
+  font:inherit;
+  font-family:inherit;
+  text-decoration: underline;
+}
 
 .menu-toggle {
   display: none;
