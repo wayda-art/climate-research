@@ -60,7 +60,7 @@ body {
   background: inherit;
   border-top: 1px solid #ddd;
   width: 100%;
-  position: sticky;
+  position: absolute;
   bottom: 0;
   height: 60px;
 }
