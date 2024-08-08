@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // NmeInject hizi codes
     window.addEventListener('load', () => {
-        const mode = localStorage.getItem('mode');
+        const mode = localStorage.getItem('theme');
         
         if (mode === 'dark') {
             body.classList.add('dark-mode');
