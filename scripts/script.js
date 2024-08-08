@@ -24,16 +24,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    // NmeInject hizi codes
+    window.addEventListener('load', () => {
+        const mode = localStorage.getItem('mode');
+        
+        if (mode === 'dark') {
+            body.classList.add('dark-mode');
+            lightModeIcon.style.display = 'none';
+            darkModeIcon.style.display = 'block';
+        } else {
+            body.classList.remove('dark-mode');
+            lightModeIcon.style.display = 'block';
+            darkModeIcon.style.display = 'none';
+        }
+    });
+
     lightModeIcon.addEventListener('click', () => {
         body.classList.add('dark-mode');
         lightModeIcon.style.display = 'none';
         darkModeIcon.style.display = 'block';
+        localStorage.setItem('theme', 'dark'); 
     });
 
     darkModeIcon.addEventListener('click', () => {
         body.classList.remove('dark-mode');
         lightModeIcon.style.display = 'block';
         darkModeIcon.style.display = 'none';
+        localStorage.setItem('theme', 'light'); 
     });
 
     zoomOutIcon.addEventListener('click', () => {
